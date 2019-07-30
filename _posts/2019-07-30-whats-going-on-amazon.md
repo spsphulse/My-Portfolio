@@ -9,8 +9,9 @@ Last year, one of my broken earphones led me to write a Linkedin article when I 
 I have been overwhelmed recently with multiple projects (at work as well as my own side-gigs). So I was looking for some way to manage everything. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts, I decided to buy it on Amazon.
 
 Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as well as _Most recent reviews_. Reasons are twofolds:
-	1. Top reviews obviously speak for most of the people and give you a general sense if the book is really good or fluff(especially in this genre of productivity/self-help books
-    2. Recent reviews to check if the book still hold relevance. A bunch of times I have found people complaining how recent edition of a book doesn't live up to expections. In that case, I'd rather buy the original print.
+1. Top reviews obviously speak for most of the people and give you a general sense if the book is really good or fluff(especially in this genre of productivity/self-help books
+2. Recent reviews to check if the book still hold relevance. A bunch of times I have found people complaining how recent edition of a book doesn't live up to expections. In that case, I'd rather buy the original print.
+
     
 Hence, I went over to check recent reviews for GTD on amazon and was surprised to see the reviews. Here is a screenshot I took.
 
