@@ -4,15 +4,15 @@ title: 'Whats going on, Amazon?'
 published: true
 ---
 
-Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin article about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
+Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin [article](https://www.linkedin.com/pulse/you-shop-amazon-absolutely-need-read-swapnil-phulse/) about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
 
-I have been overwhelmed recently with multiple projects (at work as well as my own side-gigs). So I was looking for some way to manage everything. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts, I decided to buy it on Amazon.
+Fast forward to last weeken. Recently I have been overwhelmed with multiple projects (at work as well as my own side gigs). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
 
 ![GTD book on amazon](https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
 
 
-Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as well as _Most recent reviews_. Reasons are twofolds:
-1. Top reviews obviously speak for most of the people and give you a general sense if the book is really good or fluff(especially in this genre of productivity/self-help books
+Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as well as _Most recent reviews_. Reasons are two-folds:
+1. Top reviews obviously speak for most of the people and give you a general sense if the book is really good or fluff(especially in this genre of productivity/self-help books)
 2. Recent reviews to check if the book still hold relevance. A bunch of times I have found people complaining how recent edition of a book doesn't live up to expections. In that case, I'd rather buy the original print.
     
 Hence, I went over to check recent reviews for GTD on amazon and was surprised to see the reviews. Here is a screenshot I took.
@@ -21,29 +21,31 @@ Hence, I went over to check recent reviews for GTD on amazon and was surprised t
 
 
 A couple of interesting things to note:
-- Barring that one review highlighted in green, all other reviews doesn not seem to be about the GTD book( or any book really)
+- Barring that one review highlighted in green, all other reviews do not seem to be related to the GTD book( or any book really)
 - Most of the reviews seem to mention about a hose or a flag.
 
-That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for _Getting Things Done_ on Amazon. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. So the code is mostly spaghetti. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
+That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for _Getting Things Done_. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. So the code is mostly spaghetti. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
 
 ## Part 1 Scraping
 I started by quickly scraping all the amazon reviews for GTD. Just used Python, Beautifulsoup & Requests. Nothing fancy. It consists of:
-1.Finding total number of reviews for the book
-2.Deciding number of review pages(total_reviews//10+1) and creating URLs to parse
-3.For each URL, pare the reviews therein, create a final dataframe and store these reviews.
+1. Finding total number of reviews for the book
+2. Deciding number of review pages(total_reviews//10+1) and creating URLs to parse
+3. For each URL, pare the reviews therein, create a final dataframe and store these reviews.
 
 Jupyter notebook for the same can be found here.
 
 ## Part 2 Data processing and finding most frequent words
-I did some preliminary cleaning of the reviews, chose the most recent 100 reviews and plotted the most commonly occuring words/tokens. The chart is shown below
+I did some preliminary cleaning of the reviews, chose the most recent 200 reviews and plotted the most commonly occuring words/tokens. The chart is shown below
 
 ![Frequest works from most recent 200 reviews](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/frequent_words.png?raw=true)
 
-Right off the bat, a few words that are highlighted in red jumped out as odd.Quite recently I had read a few articles on topic modeeling using NLP, but hadn't used it yet. I figured that could come in handy here to find topics that are not really associated with book/reading a book. That was my next & final step.
+Right off the bat, a few words that are highlighted in red jumped out as odd.What is hose,water and flag doing in a 'book' review.
+
+Quite recently I had read a few articles on topic modeeling using NLP, but hadn't used it yet. I figured that could come in handy here to find topics that are not really associated with book/reading a book. That was my next & final step.
 
 
 ## Part 3 Topic Modelling
-First I created a corpus and converted it to a document matrix using BOW(bag of words) approach in gensim. After that I trained an LDA(Latent Dirichlet allocation) model using the doc matrix. To understand a bit better, I visualized the results using pyLDAvis library. 
+First I created a corpus from the collection of book reviews and then converted it to a document matrix using BOW(bag of words) approach in gensim. After that I trained an LDA(Latent Dirichlet allocation) model using this document matrix. To understand a bit better, I visualized the results using pyLDAvis library. 
 
 ![LDA viz 1](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis1.PNG?raw=true)
 
@@ -51,7 +53,7 @@ First I created a corpus and converted it to a document matrix using BOW(bag of 
 
 ![LDA viz 3](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis3.PNG?raw=true)
 
-Especially stood out reviews with words like
+Especially stood out to me were reviews with words like
 -Hose
 -Flag
 -Metal
@@ -64,7 +66,7 @@ Especially stood out reviews with words like
 -Garden
 -Plant
 
-Finally just for funsies, I removed majority reviews indicating the GTD book using the following code(containing words such as david,author,GTD etc) and recreated the LDA model to check weird reviews with that subset.
+Finally just for funsies, I removed majority reviews indicating the book using the following code( remove reviews containing book indicating words such as david,author,GTD etc) and recreated the LDA model to check weird reviews with that subset (shared result at the end)
 
 ```python
 df = pd.read_csv('GTD_Final_Reviews.csv',index_col=None)
@@ -77,14 +79,14 @@ df = df[(~df.Comment.isnull())]
 df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word in book_indicators))))]
 ```
 
-I think Amazon can do a better job of supervising the comments on their products. Because otherwise, for example, how do I rely on that number of bloated reviews(31) which are not at all related to the book. 
+I think Amazon can do a better job of supervising the reviews on their products. Because otherwise, for example, how do I rely on that number of bloated reviews(31) which are not at all related to the book. The bot culture I mentioned at the beginning is additionally another problem altogther.
 
-There is so much improvements that can be done with feature engineering and some validation scheme. Some other day perhaps. Gotta read & apply my GTD book and start finishing my ongoing projects, right?
+There are so many improvements that can be done with feature engineering and some validation scheme on this data. Some other day perhaps. Gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
 
-Until then, just wanted to display contents of one of the cluster contents here at the end. Have fun going through it. There's all kinds of weird things including a cake topper & mention of hysterectomy(giggle giggle!).
+Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. There's all kinds of weird things including capes, cake toppers & a mention of hysterectomy(*giggles*).
 
 
-
+*********************************************************************************************************
 
 "We love this product, easy to use, very fast expand and seems good quality."
 
