@@ -21,7 +21,12 @@ A couple of interesting things to note:
 That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for GTD on Amazon. You see the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
 
 ## Part 1 Scraping
+I quickly scraped all the reviews for GTD. 
 
+```python
+s = "Python syntax highlighting"
+print s
+```
 
 
 
