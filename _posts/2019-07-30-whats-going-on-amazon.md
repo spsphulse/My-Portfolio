@@ -6,7 +6,7 @@ published: true
 
 Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin [article](https://www.linkedin.com/pulse/you-shop-amazon-absolutely-need-read-swapnil-phulse/) about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
 
-Fast forward to last weeken. Recently I have been overwhelmed with multiple projects (at work as well as my own side gigs). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
+**Fast forward to last weekend:**  Recently I have been overwhelmed with multiple projects (at work as well as my own side gigs). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
 
 ![GTD book on amazon](https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
 
@@ -83,201 +83,236 @@ I think Amazon can do a better job of supervising the reviews on their products.
 
 There are so many improvements that can be done with feature engineering and some validation scheme on this data. Some other day perhaps. Gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
 
-Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. There's all kinds of weird things including capes, cake toppers & a mention of hysterectomy(*giggles*).
+Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. There's all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
 
 
 *********************************************************************************************************
 
-"We love this product, easy to use, very fast expand and seems good quality."
+"Well Made !"
 
-"Love Barstool Sports. when i saw the merch on Amazon i had to buy. Fast shipping as usual. Will be buying more."
+"Love this shirt, and it came in just in time for the finale!!  Fits as expected, and great quality!"
 
-"It would be great if i received it, it is saying it was delivered to me...i got everything in the order except that...I’m not sure how to go about this...i have never experienced this before...who can i contact? What i received i love....."
+"I have used this hose one time an it seems to be a very good an strong hose. I am very satisfied."
 
-"The hose I received does not recoil as much as I had thought.  The weight of the hose is wonderful.  I can't handle those heavy hoses.  So far, no leaking or holes in the outer casing.  I am very pleased with my purchase.  I will recommend this product to my friends."
-
-"Product is holding up well."
-
-"Just used it once so far but the product was well made and fit and performed as I expected."
-
-"I bought this for my son who hikes and rides trails on his bike. Affordable and durable product."
-
-"Have only used it once so far but happy with the foil cutter and how quickly it removed the cork from a bottle"
-
-"Love them!!  Work awesome"
+"Hose was exactly as expected."
 
 "Muy buen libro."
 
-"Absolutely love these tins. Perfect for my shave soaps. Very pleased with the quick shipping. Tins came in perfect condition. I would definitely recommend."
+"I like that it's big enough to fit me properly. I am using it post surgical and helps so much more than what the hospital sends you home with."
 
-"I purchased this following hysterectomy surgery as requested by the surgeon.  It is very painful to wear and hard to velcro together.  Most of the swelling has gone down, but will have to wait another week to try again."
+"I can’t get the stud to fit or stay in place so I can pierce. I haven’t been able to use it at all."
 
-"I love everything"
+"Has storage and hold water, light weight"
 
-"GOOD PRODUCT, HANDY FOR CARRYING DOG'S WATER AND FOOD."
+"These were exactly what I needed.  They work really well on anything I have placed them on.  My grandson applied them to his shotgun & rifle. A good value."
 
-"I ordered it for my hernia but it also helps my back. I just love it."
+"They are just as advertised"
 
-"I keep dropping ceramic soap dishes and breaking them in my sink.  With this,the shaving soap is a perfect fit, plus it has a lid so dirt will not enter.It's a tad over priced, but I really like it."
+"He never met an adjective he couodn’t throw a handful of synonyms at alongside. Gets pretty fatiguing."
 
 "The earings arent sharp and it didn't pierce"
 
-"The placard holders were perfect!  I ordered another one!  Cupcake holders are also perfect in size.... a bit thin on the plastic,  but they will work."
+"Was exactly what I wanted"
 
-"I like that there are more of them than I thought, but they are smaller than I expected. They will work for what I need though, and that's what is important."
+"It arrived as advertised"
 
 "Looove this! Just what I needed!"
 
-"It works great, I sweat a lot and it does the job. I would of liked a different color but other than that I'm satisfied with the product"
+"It is not what we expected - they are to flat"
 
-"We have parts at work that needs close work and these lights make it a lot easier."
+"Great fits perfectly"
+
+"Good cd, very helpful"
+
+"As described, fits perfectly"
+
+"Totally worth your time"
+
+"is an excellent product if you want to reduce sizes thanks to its excellent design I recommend it widely because it gives very good results, it is the best investment."
 
 "Hi not what i expect aorry i returned"
 
-"Like it great in smoothies"
+"Bought this for a Caribbean cruise last summer. It kept my water cold & ice intact for 48 hours. Unbelievable! Continued to use it at work for my 16-hour overnight shifts. Just last week, it stopped keeping the water cold & the ice melted quickly. Sent an email to Healthy Human & they responded immediately. Replacing it immediately!  I am more than satisfied with this purchase & will continue to recommend it to anyone & everyone."
 
-"Love the product"
+"wonderful chocolate flavor,"
 
-"Love these. Great aroma and flavor."
+"This is an amazing vest! It really makes me sweat during workouts and it came packaged nicely. It was true to size for me and fit perfectly.. I wear a medium in clothes and bought a medium."
 
-"Great little light. Seeing the box for the first time, only about 6" x 2" x 1", I thought I received the wrong light. But upon opening it's the correct light. Long cord, more than 3' without any clumsy transformer and substantial round magnet, ~1" diameter, really holds it in place plus gooseneck makes a great light. Time will tell if it all holds together. No reason to doubt longevity at this point. Features and price can't be beat."
+"What I like about this product is it's smooth non-fishy taste."
 
-"I would love it more if there were user directions! How much tea per cup would be SO helpful!"
+"The utensils are very good and durable"
 
-"If you consider yourself a steward of common sense, expect to be completely bored by this poorly written and terribly organized collection of words on pages."
+"Amazing insights into the nitty gritty of managing your all inclusive stuff to get my mind clear!!!!"
 
-"So far, so good"
+"This is amazing.The first day I put on the sauna suit I went walking. When I came back it was soaked. I was very surprised so Ive been wearing it everytime I walk! The top part is a little tricky to get into as it has a zipper. I am a 36ddd and about 220. I have a pear shape so the velcro on the tummy part is great!  Its been about 6 days of walking and I see results!! Not huuuge results but enough I notice my shirt around my tummy fits differently."
 
 "It is mostly common sense stuff, but good for making you think about it all."
 
-"love love these"
-
 "I got this block and not the tablets I expected.  I returned it"
 
-"Thanx Sarah for helping me with bottle they are the best ever love them will only buy them your great girl"
+"I did not buy this sorry"
 
-"I got a M Size. It fits well around my wrists. However the finger loops are a tight fit. But I'm sure that these will open up after use.Overall they appear to be of good quality material and sturdy build.Will definitely consider another pair when these wear out after use.Thanks Much"
-
-"Product came quickly and looked great!"
+"great tips!  helpful in small and big ways"
 
 "ILove it !!!!!!!!"
 
-"For my grandson love it!😊"
+"Even nicer in person"
 
-"Perfect for what I needed it for!"
+"The topper was exactly as pictured and the birthday girl loved it! Shipped on time too, as it was ordered very last minute and it arrived the next day!"
 
-"This is the 4th product I have purchased from Healthy Human.  Tumblers and water bottle steins of different sizes and colors.  The ice stays frozen for close to 4 days-then I just add a hot water bottle I keep in my car and it's instantly cold and perfect!  Customer service is also amazing!"
+"Holds everything very good for the gym which I needed it for and works great under clothes too"
 
-"They were shipped very quickly and my kids love them!! Great price also"
+"love it fit good"
 
-"My daughters love them! Fun and they are learning to tell time."
+"Really like it"
+
+"Perfect for cross fit!"
 
 "Absolutely love it!"
 
-"I love it. It's big,beautiful, and sparkly."
+"They are heavy"
 
-"I love it"
+"Received item as pictured, very beautiful and my daughter was happy with her cake topper. Quality is very good, fast delivery and would definitely recommend."
+
+"Exactly as advertised and exactly what I needed."
 
 "Works well. Well made"
 
-"Too much um... superfluous text. I wish it would get to the point faster rather than giving you anecdotes."
+"These work perfect, love the feel! Highly recommend to anyone wanting to lift without injuring their hands."
 
-"Love everything I received thank you"
+"Best seller ever. Amazing people run the company. High recommended"
 
-"Kids love them"
+"Grandchildren loved the capes and masks. Great for creative play."
 
-"Love the "50 & Fabulous" cake topper. Nice quality. Will be a great addition to a friend's birthday cake."
+"Exactly what I wanted !"
 
-"This is nicely  compact, so it won't take up much of the work space you are trying to light up. A strong magnet will resist movement. A winner."
+"Had hoped it would be brighter but it will do what I purchased it for"
 
-"Love the color! Love the feel! And love the space!"
-
-"HelloI just wanna say that I absolutely love my healthy human cup. I use it for my green smoothies and my tea, it keep my smoothies cold and my tea hot for hours. I also adore the colors and that fact that I can be discreet and healthy at the same time. Thanks for making such a get product. I am definitely recommending all my family and friends to buy."
-
-"Arrived in good shape, looks beautiful will be perfect for my mothers 70th birthday party"
+"Now I can stop signing it out from the Library!!"
 
 "I got it and I like it! Gonna buy another!!"
 
-"Purchased for out of state grandson and he is loving it. Time will tell how long the velcro closure lasts. He is a tall 2 1/2 year old and the cape is fine in length - the neck is pretty large. He enjoys the mask but edges are stiff and scratchy, making it uncomfortable for extended wear on tender skin."
+"Exactly what I thought I was buying, unlike other things I've bought on Amazon!"
 
-"A must for your shop machines."
+"Never ordered this"
 
-"Perfect for my vanity space"
+"My nephew loved the capes! Thank you!!"
 
-"My son loves his capes. They appear to be handmade and with a lot of love."
+"Very nice rhinestone cake numbers.  Exactly as described.  Shipped very quickly."
 
-"My grandkids love the superhero capes"
+"I loved it!"
 
-"fast delivery, great product."
+"I loved it"
 
-"Fast shipper. Great product. Love it!"
+"just what I need"
 
-"My grandson loves the capes! Pleasantly surprised at the quality of the capes. Thank you!"
+"He has some helpful charts but the prose is long and sloggy for me.  Hard to get through to the efficient charts."
 
-"Well made and very functional. This light is easy to control and lights up a cubic meter of space very well."
+"Just like I expected!!!"
 
-"Perfect for my toddler.  fast turnaround time."
+"I have been satisfied with all of my purchases"
 
-"Small and compact.  Magnet holds well to my Wood lathe."
+"Waited until last minute to order something and this made the stress worth it! Great weight and was a hit on the cake."
 
-"The kids just love them!"
+"I didnt buy this"
+
+"Sent it to my nephew I'm the best aunt ever👍👍👍👍"
 
 "Absolutely love it"
 
-"Just what my dad was looking for to put on his grinder and drill press!! Works great!"
+"I feel better physically since started using them."
 
-"Can't wait for our son to open this from Santa!"
+"Great product! Had issues with gas/diarrhea at least twice a week. Once I began taking this probiotic, the problem has diminished considerably. I highly recommend it!"
 
-"gives me energy"
+"So far so good...will update after a few weeks."
 
-"This is my second !  I'm thinking of buying a third. It pus gather light right where I need it!"
+"Great function and design. The magnet STICKS!!"
 
-"Amazon added advertising"
+"She loved it"
 
-"helps to organize your mind/thoughts and every day execution methods."
+"Pretty much:1. Think it2. Do it"
 
-"After a few hours of writing down everything I have to do (and not finishing) I got too stressed and depressed to list any more. I have gone back to doing things in my own haphazard way. I know some people who swear by this method, but I had to give up before I was swearing AT it."
+"They are perfect!"
 
-"Great product,nice quality got it delivered really fast"
+"Just what we were looking for"
 
-"Love my water bottle!!"
+"Yes, worked perfectly!"
 
-"Super cute. Delicate and not flashy. I love it"
+"I absolutely recommend it."
 
-"Made a lot of sense."
+"Set it aside and have't gotten back to it."
 
-"Very happy with the headband I received from kooshoo. Well made and very comfortable to wear. Will definitely get more."
+"Exactly what I wanted."
 
-"Beautiful and just want I needed to give to my childhood bestie."
+"I just returned from a week long trip. Used I Travel Well during my time away. I believe it helped with flying, different altitude, temperature change, eating differently, etc. transition home was very smooth."
 
-"Everything I was expecting! Love the simplicity!"
+"Great for my son's toys. Low enough for him to reach into."
+
+"Look no further."
+
+"Great stuff works fabulously try it"
+
+"Second bottle of this product. Ran out of first a few weeks ago. Was really pleased with overall appearance in texture, luminosity and general tightening of pores resulting from continued use. As soon as I received my second bottle I applied product.  Was pleasantly surprised next morning. Noticeable improvement. Husband even noticed by the third day of use. Incredible value. Especially for results."
+
+"Mostly satisfied with this product. The phone pocket is a little tight for my S5 in an otter box case."
 
 "It was not as helpful as I expected.  Not real easy to listen to"
 
-"Love the gloves.  May be too big if you have small hands."
+"I never ordered this."
 
-"I love these bibs! They are so soft and pretty absorbant. I don't worry about my little wearing these bibs all day and having a rash around his neck/under his chin. I want all the designs!!"
+"Exactly as described."
 
-""Love" my new necklace. I received it quickly and it looks and fits exactly as expected."
+"can't wait to try"
 
-"Love them all"
+"Love it. Tried it on my hands and they were soft for hours.  Subtle coconut scent which is nice.  Highly recommend"
 
-"Very cute and super soft bibs for baby, love them!"
+"Epic - Knowledge at its best !"
 
 "Excellent. So helpful!"
 
-"This product arrived quickly and was exactly what I expected."
+"This made me twice as productive and is really actionable."
 
-"Try the bullet journal method if you're looking for a more humanly and less robotic way of organization."
+"Incredibly helpful. A must for anyone who wants to get more done, and still be a balanced, normal human being."
 
-"Excellent methodology. I'm starting to get organized and less things in my head!"
+"Pure wisdom. Very recommended."
 
-"Fast delivery, great product."
+"The basic idea is just what I have been looking for. I did not need the scientific reasoning behind everything and could have used a little more specifics on method"
 
-"the best methodology I have ever known"
+"Ho hum! I did not find this helpful."
 
-"How can the Kindle version possibly cost more than the paper version. You have all of the same costs minus printing, shipping, and storage. This is a glaring ripoff."
+"Great advice and tips, very helpful."
 
+"Delivered very fast! Exactly as described"
+
+"Good stuff. Most useful."
+
+"well-shipped, as described"
+
+"Highly recommended to every one"
+
+"good condition, very helpful"
+
+"Was not what I expected!"
+
+"See title ;)"
+
+"Lives up to all the hype."
+
+"Very helpful, shared it with my grandson and daughter....."
+
+"Very helpful. Confirmed some of my ideas and added several valuable new ideas."
+
+"Incredibly simple yet truly life changing process. It's amazing how much more productive and organized I am. I will recommend this to everyone I know!"
+
+"The concepts are good, however it needs to be made current with today's technologies.  When was this last time you used a Palm Pilot?"
+
+"Great ideas and solutions.  Just takes personal discipline to apply and stick with it.  I really like the 2 min. rule."
+
+"very out of date for todays world.  You can apply some principles but many will not apply in today tech world"
+
+"it was very informative...especially the two minute instructions....if it only takes two minutes to do then do it...that really works...lol"
+
+"Just the clarity and coaching I was hoping for, even more insight than I could have imagined."
 
 
 
