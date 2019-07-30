@@ -17,13 +17,14 @@ Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as
     
 Hence, I went over to check recent reviews for GTD on amazon and was surprised to see the reviews. Here is a screenshot I took.
 
+![Recent reviews as of 07/27 morning](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/gtd_recent_reviews.png?raw=true)
 
 
 A couple of interesting things to note:
 - Barring that one review highlighted in green, all other reviews doesn not seem to be about the GTD book( or any book really)
 - Most of the reviews seem to mention about a hose or a flag.
 
-That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for GTD on Amazon. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
+That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for _Getting Things Done_ on Amazon. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. So the code is mostly spaghetti. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
 
 ## Part 1 Scraping
 I started by quickly scraping all the amazon reviews for GTD. Just used Python, Beautifulsoup & Requests. Nothing fancy. It consists of:
@@ -36,12 +37,21 @@ Jupyter notebook for the same can be found here.
 ## Part 2 Data processing and finding most frequent words
 I did some preliminary cleaning of the reviews, chose the most recent 100 reviews and plotted the most commonly occuring words/tokens. The chart is shown below
 
+![Frequest works from most recent 200 reviews](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/frequent_words.png?raw=true)
 
 Right off the bat, a few words that are highlighted in red jumped out as odd.Quite recently I had read a few articles on topic modeeling using NLP, but hadn't used it yet. I figured that could come in handy here to find topics that are not really associated with book/reading a book. That was my next & final step.
 
 
 ## Part 3 Topic Modelling
-First I created a corpus and converted it to a document matrix using BOW(bag of words) approach in gensim. After that I trained an LDA(Latent Dirichlet allocation) model using the doc matrix. To understand a bit better, we visualize the results using pyLDAvis library. Especially stood out reviews with words like
+First I created a corpus and converted it to a document matrix using BOW(bag of words) approach in gensim. After that I trained an LDA(Latent Dirichlet allocation) model using the doc matrix. To understand a bit better, I visualized the results using pyLDAvis library. 
+
+![LDA viz 1](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis1.PNG?raw=true)
+
+![LDA viz 2](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis2.PNG?raw=true)
+
+![LDA viz 3](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis3.PNG?raw=true)
+
+Especially stood out reviews with words like
 -Hose
 -Flag
 -Metal
@@ -54,8 +64,7 @@ First I created a corpus and converted it to a document matrix using BOW(bag of 
 -Garden
 -Plant
 
-
-Finally just for funsies, I removed majority reviews indicating the GTD book using the following code(containing words such as david,author,GTD etc).
+Finally just for funsies, I removed majority reviews indicating the GTD book using the following code(containing words such as david,author,GTD etc) and recreated the LDA model to check weird reviews with that subset.
 
 ```python
 df = pd.read_csv('GTD_Final_Reviews.csv',index_col=None)
@@ -64,17 +73,15 @@ book_indicators=['book','gtd','productivity','audible','david','allen','tasks','
                  'write','author','boring','information','system','plan','focus',
                 'schedule','practice','busy']
 
-#~(df.Comment.apply(lambda review: any(word in review for word in book_indicators)))
 df = df[(~df.Comment.isnull())]
 df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word in book_indicators))))]
-df.shape
 ```
 
-Then I built an LDA model and just listed one of the cluster content. I think Amazon can do a better job of suprvising the comments on their products. Because otherwise, for example, how do I rely on that number of bloated reviews which are not at all related to the book. 
+I think Amazon can do a better job of supervising the comments on their products. Because otherwise, for example, how do I rely on that number of bloated reviews(31) which are not at all related to the book. 
 
-There is so much improvements that can be done with feature engineering and some validation scheme. Some other day perhaps. Gotta read & apply my GTD book and start finishing the projects.
+There is so much improvements that can be done with feature engineering and some validation scheme. Some other day perhaps. Gotta read & apply my GTD book and start finishing my ongoing projects, right?
 
-Until then, just wanted to display contents of one of the cluster contents here at the end. Have fun going through it. There's all kinds of weird things including cake topper & a mention of hysterectomy(giggle giggle!).
+Until then, just wanted to display contents of one of the cluster contents here at the end. Have fun going through it. There's all kinds of weird things including a cake topper & mention of hysterectomy(giggle giggle!).
 
 
 
