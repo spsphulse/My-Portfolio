@@ -8,7 +8,7 @@ Last year, one of my broken earphones led me to a notorious bot culture on Amazo
 
 I have been overwhelmed recently with multiple projects (at work as well as my own side-gigs). So I was looking for some way to manage everything. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts, I decided to buy it on Amazon.
 
-![GTD book on amazon]({{site.baseurl}}/https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
+![GTD book on amazon](https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
 
 
 Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as well as _Most recent reviews_. Reasons are twofolds:
