@@ -4,16 +4,20 @@ title: 'Whats going on, Amazon?'
 published: true
 ---
 
-Last year, one of my broken earphones led me to write a Linkedin article when I had stumbled onto a notorious bot culture on Amazon. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
+Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin article about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
 
 I have been overwhelmed recently with multiple projects (at work as well as my own side-gigs). So I was looking for some way to manage everything. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts, I decided to buy it on Amazon.
+
+![GTD book on amazon]({{site.baseurl}}/https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
+
 
 Typically, when I choose to buy books on Amazon, I look at both _Top reviews_ as well as _Most recent reviews_. Reasons are twofolds:
 1. Top reviews obviously speak for most of the people and give you a general sense if the book is really good or fluff(especially in this genre of productivity/self-help books
 2. Recent reviews to check if the book still hold relevance. A bunch of times I have found people complaining how recent edition of a book doesn't live up to expections. In that case, I'd rather buy the original print.
-
     
 Hence, I went over to check recent reviews for GTD on amazon and was surprised to see the reviews. Here is a screenshot I took.
+
+
 
 A couple of interesting things to note:
 - Barring that one review highlighted in green, all other reviews doesn not seem to be about the GTD book( or any book really)
