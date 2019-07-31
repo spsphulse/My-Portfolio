@@ -6,7 +6,7 @@ published: true
 
 Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin [article](https://www.linkedin.com/pulse/you-shop-amazon-absolutely-need-read-swapnil-phulse/) about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
 
-**Fast forward to last weekend:**  Recently I have been overwhelmed with multiple projects (at work as well as my own side gigs). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
+**Fast forward to last weekend:**  Recently I have been overwhelmed with multiple projects (at work as well as my own side projects). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
 
 ![GTD book on amazon](https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
 
@@ -24,7 +24,7 @@ A couple of interesting things to note:
 - Barring that one review highlighted in green, all other reviews do not seem to be related to the GTD book( or any book really)
 - Most of the reviews seem to mention about a hose or a flag.
 
-That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for _Getting Things Done_. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. So the code is mostly spaghetti. I just wanted to note down my cusrsory findings. Good enough topic for a first blog post,eh?
+That was it! That was enough for the serial procrastinator in me to abandon all of my other ongoing projects and start with this new analysis of reviews for _Getting Things Done_. Do you notice the irony here? Anyhoo, I promised myself I won't spend more than a couple hours on this. So the code is mostly spaghetti. I just wanted to find some odd reviews & note down my cusrsory findings. Good enough topic for a first blog post,eh?
 
 ## Part 1 Scraping
 I started by quickly scraping all the amazon reviews for GTD. Just used Python, Beautifulsoup & Requests. Nothing fancy. It consists of:
@@ -32,7 +32,7 @@ I started by quickly scraping all the amazon reviews for GTD. Just used Python, 
 2. Deciding number of review pages(total_reviews//10+1) and creating URLs to parse
 3. For each URL, pare the reviews therein, create a final dataframe and store these reviews.
 
-Jupyter notebook for the same can be found here.
+Github repo for this has been shared at the end.
 
 ## Part 2 Data processing and finding most frequent words
 I did some preliminary cleaning of the reviews, chose the most recent 200 reviews and plotted the most commonly occuring words/tokens. The chart is shown below
@@ -41,11 +41,17 @@ I did some preliminary cleaning of the reviews, chose the most recent 200 review
 
 Right off the bat, a few words that are highlighted in red jumped out as odd.What is hose,water and flag doing in a 'book' review.
 
-Quite recently I had read a few articles on topic modeeling using NLP, but hadn't used it yet. I figured that could come in handy here to find topics that are not really associated with book/reading a book. That was my next & final step.
 
 
 ## Part 3 Topic Modelling
-First I created a corpus from the collection of book reviews and then converted it to a document matrix using BOW(bag of words) approach in gensim. After that I trained an LDA(Latent Dirichlet allocation) model using this document matrix. To understand a bit better, I visualized the results using pyLDAvis library. 
+Quite recently I had read a few articles on topic modelling using NLP, but hadn't used it yet. I figured that could come in handy here to find topics that are not really associated with book/reading a book. That was my next & final step.
+
+1. First I created a corpus from the collection of book reviews
+2. Then I converted it to a document matrix using BOW(bag of words) approach in gensim. 
+3. After that I trained an LDA(Latent Dirichlet allocation) model using this document matrix. 
+4. To understand a bit better, I visualized the results using pyLDAvis library. 
+
+Sharing some odd ones that I found over here.
 
 ![LDA viz 1](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis1.PNG?raw=true)
 
@@ -67,31 +73,20 @@ Especially stood out to me were reviews with words like
 - Plant
 
 
-Finally just for funsies, I removed majority reviews indicating the book (remove reviews containing common words indicating a book review such as david,author,audible,GTD etc) and recreated the LDA model to check weird reviews within that subset (shared result at the end)
+Alright, finally just for funsies, I removed majority of the reviews indicating a book (remove reviews containing common words indicating a book review such as david,author,audible,GTD etc) and recreated the LDA model to check odd reviews within that subset (shared result at the end for one of the clusters)
 
-```
-df = pd.read_csv('GTD_Final_Reviews.csv',index_col=None)
-
-book_indicators=['book','gtd','productivity','audible','david','allen','tasks','read',
-                 'write','author','boring','information','system','plan','focus',
-                'schedule','practice','busy']
-
-df = df[(~df.Comment.isnull())]
-df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word in book_indicators))))]
-```
 
 I think Amazon can do a better job of curating the reviews on their products.
 
-
 **Reactively**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
 
-**Proactively**: How about an advanced topic model that is incrementally run on new reviews, identify irrelevant topics and remove the reviews that don't seem to make sense.
+**Proactively**: How about an advanced topic model or an advanced 'insert some advanced NLP stuff like BERT,XLNet' model that is incrementally run on new reviews, identify irrelevant topics and remove the reviews that don't seem to make sense.
 
-Because otherwise, for example, how do I rely on that number of reviews(3176 in this case). Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But I believe a company such as Amazon definitely has the smarts and the resources to do this at their scale.
+Because otherwise, how do I rely on that number of reviews(3176 in this case) and utimately the rating. Amazon must be using 'number of reviews' to come up with various metrics that drive where this book gets featured(1st page, 2nd page etc).Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem for them to handle altogether. I believe a company such as Amazon definitely has the smarts as well as the resources to do this at their scale.
 
-There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right? For others willing to dig in, I've put up the github repo [here](https://github.com/spsphulse/Amazon-Getting-Things-Done-odd-reviews).
+There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself.Some other day perhaps. Right now I gotta read & apply my GTD book - then start finishing my actual ongoing projects, right? For others willing to dig in, I've put up my half-assed github repo [here](https://github.com/spsphulse/Amazon-Getting-Things-Done-odd-reviews). If you only need data to play around with, it is [here](https://github.com/spsphulse/Amazon-Getting-Things-Done-odd-reviews/blob/master/GTD_Final_Reviews.csv).
 
-Until then, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
+Until next time! Lastly, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
 
 
 *********************************************************************************************************
