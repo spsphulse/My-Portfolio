@@ -320,26 +320,4 @@ Until then, just wanted to display contents of one of the LDA clusters here at t
 
 "Just the clarity and coaching I was hoping for, even more insight than I could have imagined."
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--Swapnil
+*********************************************************************************************************
