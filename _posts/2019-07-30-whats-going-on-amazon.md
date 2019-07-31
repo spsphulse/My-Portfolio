@@ -81,15 +81,16 @@ df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word i
 ```
 
 I think Amazon can do a better job of curating the reviews on their products. 
-**Reactionary**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevanmt reviews? Or are the sellers bloating review numbers with just trash?
 
-**Proactively**: Perhaps an incremental topic model behaviour to notice new topics and remove the reviews that don't seem relevant.
+**Reactionary**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
 
-Because otherwise, for example, how do I rely on that number of reviews(3176 in this case) which are not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But a company such as Amazon definitely has the smarts and the resources to do this at their scale.
+**Proactively**: Perhaps an advanced incremental topic model to notice new topics and remove the reviews that don't seem relevant.
 
-There are so many improvements that can be done with feature engineering and well thought validation scheme on their reviews. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
+Because otherwise, for example, how do I rely on that number of reviews(3176 in this case). Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But I believe a company such as Amazon definitely has the smarts and the resources to do this at their scale.
 
-Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
+There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
+
+Until then, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things including capes, cakes & diarrhea (*giggles*).
 
 
 *********************************************************************************************************
