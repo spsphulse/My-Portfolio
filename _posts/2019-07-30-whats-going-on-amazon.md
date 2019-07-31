@@ -89,7 +89,7 @@ I think Amazon can do a better job of curating the reviews on their products.
 
 Because otherwise, for example, how do I rely on that number of reviews(3176 in this case). Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But I believe a company such as Amazon definitely has the smarts and the resources to do this at their scale.
 
-There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
+There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right? For others willing to dig in, I've put up the github repo [here](https://github.com/spsphulse/Amazon-Getting-Things-Done-odd-reviews).
 
 Until then, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
 
