@@ -80,7 +80,7 @@ I think Amazon can do a better job of curating the reviews on their products.
 
 **Reactively**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
 
-**Proactively**: How about an advanced topic model or an advanced 'insert some advanced NLP stuff like BERT,XLNet' model that is incrementally run on new reviews, identify irrelevant topics and remove the reviews that don't seem to make sense.
+**Proactively**: How about an advanced topic model or an advanced _'insert some advanced deep learning NLP stuff like BERT,XLNet'_ model that is incrementally run on new reviews, identify irrelevant topics and remove the reviews that don't seem to make sense.
 
 Because otherwise, how do I rely on that number of reviews(3176 in this case) and utimately the rating. Amazon must be using 'number of reviews' to come up with various metrics that drive where this book gets featured(1st page, 2nd page etc).Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem for them to handle altogether. I believe a company such as Amazon definitely has the smarts as well as the resources to do this at their scale.
 
