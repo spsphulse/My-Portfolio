@@ -67,9 +67,9 @@ Especially stood out to me were reviews with words like
 - Plant
 
 
-Finally just for funsies, I removed majority reviews indicating the book (remove reviews containing common words indicating a book review such as david,author,GTD etc) and recreated the LDA model to check weird reviews within that subset (shared result at the end)
+Finally just for funsies, I removed majority reviews indicating the book (remove reviews containing common words indicating a book review such as david,author,audible,GTD etc) and recreated the LDA model to check weird reviews within that subset (shared result at the end)
 
-```python
+```
 df = pd.read_csv('GTD_Final_Reviews.csv',index_col=None)
 
 book_indicators=['book','gtd','productivity','audible','david','allen','tasks','read',
@@ -83,9 +83,9 @@ df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word i
 I think Amazon can do a better job of curating the reviews on their products.
 
 
-**Reactionary**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
+**Reactively**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
 
-**Proactively**: Perhaps an advanced incremental topic model to notice new topics and remove the reviews that don't seem relevant.
+**Proactively**: How about an advanced topic model that is incrementally run on new reviews, identify irrelevant topics and remove the reviews that don't seem to make sense.
 
 Because otherwise, for example, how do I rely on that number of reviews(3176 in this case). Some of them are clearly not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But I believe a company such as Amazon definitely has the smarts and the resources to do this at their scale.
 
