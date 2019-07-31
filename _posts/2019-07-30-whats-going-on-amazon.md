@@ -6,7 +6,7 @@ published: true
 
 Last year, one of my broken earphones led me to a notorious bot culture on Amazon. I even wrote a Linkedin [article](https://www.linkedin.com/pulse/you-shop-amazon-absolutely-need-read-swapnil-phulse/) about it. It received decent attention at the time. I thought about expanding on the project and doing similar analysis for other low-cost products. But as always, life happened, other things took over and I completely forgot about it.
 
-**Fast forward to last weekend:**  Recently I have been overwhelmed with multiple projects (at work as well as my own side projects). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon.
+**Fast forward to last weekend:**  Recently I have been overwhelmed with multiple projects (at work as well as my own side projects). So I was looking for some way to manage everything efficiently. After finding that **'Getting Things Done(GTD) by David Allen'** was mentioned in multiple HN discussions as well as reddit posts on a few self-help subs, I decided to buy it on Amazon. Here I just stumbled onto some really really odd reviews. This post is about that.
 
 ![GTD book on amazon](https://raw.githubusercontent.com/spsphulse/My-Portfolio/master/images/amz_gtd_images/1.PNG)
 
