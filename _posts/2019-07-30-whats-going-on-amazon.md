@@ -54,19 +54,20 @@ First I created a corpus from the collection of book reviews and then converted 
 ![LDA viz 3](https://github.com/spsphulse/My-Portfolio/blob/master/images/amz_gtd_images/ldavis3.PNG?raw=true)
 
 Especially stood out to me were reviews with words like
--Hose
--Flag
--Metal
--Water
--Ponytail
--Coffee
--Nozzle
--Sturdy
--Barn
--Garden
--Plant
+- Hose
+- Flag
+- Metal
+- Water
+- Ponytail
+- Coffee
+- Nozzle
+- Sturdy
+- Barn
+- Garden
+- Plant
 
-Finally just for funsies, I removed majority reviews indicating the book using the following code( remove reviews containing book indicating words such as david,author,GTD etc) and recreated the LDA model to check weird reviews with that subset (shared result at the end)
+
+Finally just for funsies, I removed majority reviews indicating the book (remove reviews containing common words indicating a book review such as david,author,GTD etc) and recreated the LDA model to check weird reviews within that subset (shared result at the end)
 
 ```python
 df = pd.read_csv('GTD_Final_Reviews.csv',index_col=None)
@@ -79,11 +80,16 @@ df = df[(~df.Comment.isnull())]
 df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word in book_indicators))))]
 ```
 
-I think Amazon can do a better job of supervising the reviews on their products. Because otherwise, for example, how do I rely on that number of bloated reviews(31) which are not at all related to the book. The bot culture I mentioned at the beginning is additionally another problem altogther.
+I think Amazon can do a better job of curating the reviews on their products. 
+**Reactionary**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevanmt reviews? Or are the sellers bloating review numbers with just trash?
 
-There are so many improvements that can be done with feature engineering and some validation scheme on this data. Some other day perhaps. Gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
+**Proactively**: Perhaps an incremental topic model behaviour to notice new topics and remove the reviews that don't seem relevant.
 
-Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. There's all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
+Because otherwise, for example, how do I rely on that number of reviews(3176 in this case) which are not at all related to the book. The bot culture I mentioned at the very beginning is another problem to handle altogether. But a company such as Amazon definitely has the smarts and the resources to do this at their scale.
+
+There are so many improvements that can be done with feature engineering and well thought validation scheme on their reviews. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
+
+Until then, just wanted to display contents of one of the LDA clusters here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
 
 
 *********************************************************************************************************
