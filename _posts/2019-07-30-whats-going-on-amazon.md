@@ -91,7 +91,7 @@ Because otherwise, for example, how do I rely on that number of reviews(3176 in 
 
 There are so many improvements that can be done with feature engineering and well thought validation scheme on this code itself. Some other day perhaps. Right now I gotta read & apply my GTD book and then start finishing my actual ongoing projects, right?
 
-Until then, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things including capes, cakes & diarrhea (*giggles*).
+Until then, just wanted to display contents of one of the LDA clusters of reviews here at the end. Have fun going through it. Theres all kinds of weird things - including capes, cakes & diarrhea (*giggles*).
 
 
 *********************************************************************************************************
