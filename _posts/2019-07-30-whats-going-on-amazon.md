@@ -80,7 +80,8 @@ df = df[(~df.Comment.isnull())]
 df = df[(~(df.Comment.apply(lambda review: any(word in review.lower() for word in book_indicators))))]
 ```
 
-I think Amazon can do a better job of curating the reviews on their products. 
+I think Amazon can do a better job of curating the reviews on their products.
+
 
 **Reactionary**: Find out who fucked up? Was it Ben, the new intern? How else did we end up with such irrelevant reviews? Or are the sellers back at it again bloating review numbers with just trash?
 
