@@ -4,7 +4,7 @@ layout: post
 title: Scraping the entire louvre library in one line of code
 ---
 
-A couple of days ago, I came across this [hackernews post](https://news.ycombinator.com/item?id=26599830). What an amazing new! The entire collection of Louvre has been made public [here](https://collections.louvre.fr/en/).
+A couple of days ago, I came across this [hackernews post](https://news.ycombinator.com/item?id=26599830). What an amazing new! The entire collection of Louvre has been made public [here](https://collections.louvre.fr/en/). I attempt to download the entire library. Took a short [screencast](https://youtu.be/N84oRhc5zhg) as I began this download. Recoded & Annotated with Camtasia.
 
 For a while, I was meaning to download some classical paintings in bulk to create a live version of ClassicalArtMemes. It will be ideated using Django, Tailwind and Vanilla JS. And Louvre making all its artwork public was a perfect way to gather seed data I'll later need for my webapp.
 
