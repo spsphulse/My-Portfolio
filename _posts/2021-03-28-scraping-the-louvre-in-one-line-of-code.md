@@ -12,7 +12,7 @@ For a while, I was meaning to download some classical paintings in bulk to creat
 
 Any time I have a huge data collection job(for myself or a client), I like to begin with closely observing the website in question. While my scraping/automation/data-collectioh toolbelt consists of Python, Scrapy, Selenium, Puppeteer, lxml/Beautifulsoup, sometimes that is a clear overkill. Noticing the website and its quirks can reduce the amount of effort significantly. It's kind of akeen to a much more plebian version of reverse-engineering.
 
-![Home page of The Louvre website](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/homepage.png)
+![Home page of The Louvre website](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/homepage.png&raw=true)
 
 
 As you can see, there are all sorts of work of arts. Let us check the painting section, and then open one of the paintings.
