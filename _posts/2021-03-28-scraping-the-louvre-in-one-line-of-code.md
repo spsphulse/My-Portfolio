@@ -80,15 +80,16 @@ Well I tried a few more times like and decide to go with an upper limit of 400,0
 
 Now I have a couple of jobs in front of me. Those can be broken down as:
 
-1.Creating a sequence of URLs I want to try downloading from 1 to 400,000(my supposed upper bound)
-2.Dowloading a URL and naming the corresponding zipped file
-3.A way to parallelize so I can try 100s of downloads at single instant of time. Essentially a 100X speedup against a normal sequential download over a list of given urls.
+1. Creating a sequence of URLs I want to try downloading from 1 to 400,000(my supposed upper bound)
+2. Dowloading a URL and naming the corresponding zipped file
+3. A way to parallelize so I can try 100s of downloads at single instant of time. Essentially a 100X speedup against a normal sequential download over a list of given urls.
+
 
 Every single one of these mini-tasks fall within the realm of Unix and it's pipe-able philosophy. Time to whip out Ubuntu. There are number of ways to get the expected results(ie downloading entire Louvre library) here. But I'll mention the three most relevant(that I felt & ended up using)in order below. 
 
-1.Creating a sequence of URLs I want to try downloading from 1 to 400,000(my supposed upper bound) : **SEQ**
-2.Dowloading a URL and naming the corresponding zipped file: **WGET**
-3.A way to parallelize so I can try 100s of downloads at single instant of time. Essentially a 100X speedup against a normal sequential download over a list of given urls : **GNU-PARALLEL**
+1. Creating a sequence of URLs I want to try downloading from 1 to 400,000(my supposed upper bound) : **SEQ**
+2. Dowloading a URL and naming the corresponding zipped file: **WGET**
+3. A way to parallelize so I can try 100s of downloads at single instant of time. Essentially a 100X speedup against a normal sequential download over a list of given urls : **GNU-PARALLEL**
 
 ## TLDR:
 If you haven't already dozed off in the build-up itself :) it's time to create that single line of code/command
@@ -102,7 +103,7 @@ _wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip_ --
 
 Drumrollssss....
 
-'''
+'''bash
 
 seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip
 
