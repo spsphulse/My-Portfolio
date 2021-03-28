@@ -4,7 +4,7 @@ layout: post
 title: Scraping the entire louvre library in one line of code
 ---
 
-A couple of days ago, I came across this [hackernews post](https://news.ycombinator.com/item?id=26599830). What an amazing new! The entire collection of Louvre has been made public [here](https://collections.louvre.fr/en/). I attempt to download the entire library. Took a short [screencast](https://youtu.be/N84oRhc5zhg) as I began this download. Recoded & Annotated with Camtasia.
+A couple of days ago, I came across this [hackernews post](https://news.ycombinator.com/item?id=26599830). What an amazing news! The entire collection of Louvre has been made public [here](https://collections.louvre.fr/en/). I attempt to download the entire library. Took a short [screencast](https://youtu.be/N84oRhc5zhg) as I began this download. Recoded & Annotated with Camtasia.
 
 Lets get started!
 
@@ -12,7 +12,7 @@ For a while, I was meaning to download some classical paintings in bulk to creat
 
 ## Step 1 : Figuring out the website
 
-Any time I have a huge data collection job(for myself or a client), I like to begin with closely observing the website in question. While my scraping/automation/data-collectioh toolbelt consists of Python, Scrapy, Selenium, Puppeteer, lxml/Beautifulsoup, sometimes that is a clear overkill. Noticing the website and its quirks can reduce the amount of effort significantly. It's kind of akeen to a much more plebian version of reverse-engineering.
+Any time I have a huge data collection job(for myself or a client), I like to begin with closely observing the website in question. While my scraping/automation/data-collection toolbelt consists of Python, Scrapy, Selenium, Puppeteer, lxml/Beautifulsoup, sometimes that is a clear overkill. Noticing the website and its quirks can reduce the amount of effort significantly. It's kind of akeen to a much more plebian version of reverse-engineering.
 
 ![Home page of The Louvre website](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/homepage.png?raw=true)
 
