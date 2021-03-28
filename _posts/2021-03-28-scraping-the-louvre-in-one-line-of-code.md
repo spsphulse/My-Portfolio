@@ -45,21 +45,21 @@ At this point, it is more than obvious to me that the common way to go about col
 Now that we have the usual method to go about crawling the site, let us dig in some more. If we're lucky we might just end up with some url hack to make our lives easy.
 
 
-![dlink](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/dlink1.png?raw=true)
-
 Checking the download URL of the artwork, it seem to be following a pattern. It can easily be broken down to 3 parts
 
 ![dlink1](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/dlink1.png?raw=true)
 
-1) the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
-2) the paramter ie the zip file number(121146) consisting the artwork
-3) the suffix: '/0'
+1. the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
+2. the paramter ie the zip file number(121146) consisting the artwork
+3. the suffix: '/0'
+
+
 
 We have a theory but lets spot test this with another example. Without opening any other detail page, lets create our own URL as following 
 
-1) the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
-2) the paramter ie the zip file number(121147) consisting the artwork
-3) the suffix: '/0'
+1. the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
+2. the paramter ie the zip file number(121147) consisting the artwork
+3. the suffix: '/0'
 
 ![prompt2](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/Download_Prompt2.png?raw=true)
 
@@ -82,7 +82,7 @@ Now my range to try is from 250,000 to 500,000.
 
 ![error](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/error.png?raw=true)
 
-Well I tried a few more times like and decide to go with an upper limit of 400,000 where I couldn't dowload the file. I don't care care if several links on the upper end of this spectrum don't have download links, as the tool I used in next section can ignore those & just won't download anything. Plus it runs pretty fast and parallelized, so I can get away with trying to find the exact number for my upper bound.
+Well I tried a few more times like that and decide to go with an upper limit of 400,000 where I couldn't dowload the file. I don't care care if several links on the upper end of this spectrum don't have download links, as the tool I used in next section can ignore those & just won't download anything. Plus it runs pretty fast and parallelized, so I can get away with trying to find the exact number for my upper bound.
 
 
 ## Step 3 : Download Automation - The right tool
@@ -104,20 +104,20 @@ Every single one of these mini-tasks fall within the realm of Unix and it's pipe
 ## TLDR:
 If you haven't already dozed off in the build-up itself :) it's time to create that single line of code/command
 
-_seq 400000_ --> will  create the needed sequence
+	_seq 400000_ --> will  create the needed sequence
 
-_parallel -j100_ --> will parallize the job by downloading 100 tasks we are about to give
+	_parallel -j100_ --> will parallize the job by downloading 100 tasks we are about to give
 
-_wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip_ --> will download one zip file for every {number} in sequence and the downloaded file have the name as {number}.zip
+	_wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip_ --> will download one zip file for every {number} in sequence and the downloaded file have the name as {number}.zip
 
 
 Drumrollssss....
 
-'''bash
+```bash
 
 seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip
 
-'''
+```
 
 That's it!! That single line of code is going to download the entire Louvre library for us. As of writing this, I kept the script running for ~30 mins & it has already ploughed through the first 50,000 URLs(75GB of data). I reckon another couple of hours and I'll have the entire Library in my hard-drive. 
 
