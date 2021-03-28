@@ -121,7 +121,7 @@ seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/
 
 ```
 
-That's it!! That single line of code is going to download the entire Louvre library for us. As of writing this, I kept the script running for ~30 mins & it has already ploughed through the first 50,000 URLs(75GB of data). I reckon another couple of hours and I'll have the entire Library in my hard-drive. 
+That's it!! That single line of code is going to download the entire Louvre library for us. As of writing this, I kept the script running for ~30 mins & it has already ploughed through the first 50,000 URLs(nearly 50GB of data). I reckon another couple of hours and I'll have the entire Library in my hard-drive. 
 
 I took a small screencast as I began this download and it is hosted on youtube [here](https://youtu.be/N84oRhc5zhg "screencast"). Recoded & Annotated with Camtasia.
 
