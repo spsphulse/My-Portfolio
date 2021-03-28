@@ -126,9 +126,9 @@ I took a small screencast as I began this download and it is hosted on youtube [
 
 ## Introspection:
 
-1.As I look back, I think my hard-drive is whirring like it's about to take off. Should have just spun up and EC2 instance on AWS, created and mounted an s3 bucket to that instance. I could have easily piped every single download directly to the S3 bucket without having to download it to my instance. So a beefy instance is not necessary for this I/O intensive job.
+1. As I look back, I think my hard-drive is whirring like it's about to take off. Should have just spun up and EC2 instance on AWS, created and mounted an s3 bucket to that instance. I could have easily piped every single download directly to the S3 bucket without having to download it to my instance. So a beefy instance is not necessary for this I/O intensive job.
 
-2.The Louvre needs to spend some time putting restriction in place when it comes to download limits. I've already downloaded 75GB data and the '429 too many requests' is nowhere in sight. I'm not complaining, but someone in their IT department needs to monitor download traffic. Or it could just be that server costs are puny in their eyes considering the $$$ they rake in hosting arguably the best artwork in the world dating back to centuries.
+2. The Louvre needs to spend some time putting restriction in place when it comes to download limits. I've already downloaded 75GB data and the '429 too many requests' is nowhere in sight. I'm not complaining, but someone in their IT department needs to monitor download traffic. Or it could just be that server costs are puny in their eyes considering the $$$ they rake in hosting arguably the best artwork in the world dating back to centuries.
 
 
 
