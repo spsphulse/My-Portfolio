@@ -20,30 +20,36 @@ As you can see, there are all sorts of work of arts. Let us check the painting s
 ![Paintings section](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/paintings.png?raw=true)
 
 
-![Download button.png]({{site.baseurl}}/_posts/Download button.png)
+![Download button.png](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/Download%20button.png?raw=true)
 
 
 It looks like the detail page of the painting consits of photos in various angles. It also presents us with a download button. Lets click that
 
-
+![tnc](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/TnC.png?raw=true)
 
 
 Interesting! So in order to download this gallery(zipped file containing images) I'll have to accept the TnC and then click download.
 
+![dprompt](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/downloadprompt.png?raw=true)
 
 On clicking download, I'm presented a prompt to save the file on my host machine.
 
 
-At this point, it is more than obvious that the common way to go about collecting data from the site is to 
-- Create a Scrapy Crawler with pagination 
+At this point, it is more than obvious to me that the common way to go about collecting data from the site is to 
+- Create a Scrapy Crawler with pagination support
 - Automate the clicks from browser to accept TnC and download the zipped version of art gallery.
+
 
 ## Step 2 : Finding an easier way out
 
 Now that we have the usual method to go about crawling the site, let us dig in some more. If we're lucky we might just end up with some url hack to make our lives easy.
 
 
+![dlink](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/dlink1.png?raw=true)
+
 Checking the download URL of the artwork, it seem to be following a pattern. It can easily be broken down to 3 parts
+
+![dlink1](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/dlink1.png?raw=true)
 
 1) the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
 2) the paramter ie the zip file number(121146) consisting the artwork
@@ -54,6 +60,8 @@ We have a theory but lets spot test this with another example. Without opening a
 1) the resource prefix: 'https://collections.louvre.fr/en/artwork/image/download/'
 2) the paramter ie the zip file number(121147) consisting the artwork
 3) the suffix: '/0'
+
+![prompt2](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/Download_Prompt2.png?raw=true)
 
 And now enter it into the browser. 
 
@@ -71,6 +79,8 @@ So we start with a range of 1 to 1,000,000. Try to see if there is a downloadabl
 Now my range to try reduced from 1 to 500,000. I try to download for a parameter 250,000 and am able to download the zip file.
 
 Now my range to try is from 250,000 to 500,000.
+
+![error](https://github.com/spsphulse/My-Portfolio/blob/master/images/louvre/error.png?raw=true)
 
 Well I tried a few more times like and decide to go with an upper limit of 400,000 where I couldn't dowload the file. I don't care care if several links on the upper end of this spectrum don't have download links, as the tool I used in next section can ignore those & just won't download anything. Plus it runs pretty fast and parallelized, so I can get away with trying to find the exact number for my upper bound.
 
@@ -111,7 +121,7 @@ seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/
 
 That's it!! That single line of code is going to download the entire Louvre library for us. As of writing this, I kept the script running for ~30 mins & it has already ploughed through the first 50,000 URLs(75GB of data). I reckon another couple of hours and I'll have the entire Library in my hard-drive. 
 
-I took a small screencast as I began this download and it is hosted on youtube here. Recoded & Annotated with Camtasia.
+I took a small screencast as I began this download and it is hosted on youtube [here](https://youtu.be/N84oRhc5zhg "screencast"). Recoded & Annotated with Camtasia.
 
 
 ## Introspection:
