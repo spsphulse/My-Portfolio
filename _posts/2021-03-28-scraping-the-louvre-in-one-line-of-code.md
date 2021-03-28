@@ -113,7 +113,7 @@ If you haven't already dozed off in the build-up itself :) it's time to create t
 
 Drumrollssss....
 
-```bash
+```
 
 seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip
 
