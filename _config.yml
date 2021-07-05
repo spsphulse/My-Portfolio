@@ -63,7 +63,6 @@ paginate_path: "/blog/page:num"
 version: v1.2.0
 
 
-highlighter: rouge
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
