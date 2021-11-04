@@ -5,13 +5,13 @@ title: Evolving Code through OOPs and tests - Part 2
 ---
 
 
-I hope you have gone through the first part here.  We will continue to build on the same blocks and try to add more functionality to our seemingly simpe class.
+I hope you have gone through the first part [here]({{ site.baseurl }}{% link _posts/2021-11-03-Evolving-Python-code-through-OOPs-and-tests.md %}).  We will continue to build on the same blocks and try to add more functionality to our seemingly simpe class.
 
 
 
 > **Requirement**: You should be able to change the side for the square object. In doing so, perimeter as well as area attributes should get updated.
 
-First we will add a test function wheree can change the side value of an object and perimeter,area attributes should update based on this new value
+First we will add a test function where can change the side value of an object and perimeter,area attributes should update based on this new value
 
 ![](/../images/2021-11-04-Evolving-Python-code-through-OOPs-and-tests-part-2/2021-11-04-16-01-27.png)
 *test function to check that updating side updates perimeter and area correctly*

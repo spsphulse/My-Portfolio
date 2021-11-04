@@ -106,20 +106,16 @@ Every single one of these mini-tasks fall within the realm of Unix and it's pipe
 ## TLDR:
 If you haven't already dozed off in the build-up itself :) it's time to create that single line of code/command
 
-	_seq 400000_ --> will  create the needed sequence
+1. **_seq 400000_** --> will  create the needed sequence
 
-	_parallel -j100_ --> will parallize the job by downloading 100 tasks we are about to give
+2. **_parallel -j100_** --> will parallize the job by downloading 100 tasks we are about to give
 
-	_wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip_ --> will download one zip file for every {number} in sequence and the downloaded file have the name as {number}.zip
+3. **_wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip_** --> will download one zip file for every {number} in sequence and the downloaded file have the name as {number}.zip
 
 
 Drumrollssss....
 
-```
-
-seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip
-
-```
+> ``` seq 400000 | parallel -j100 wget https://collections.louvre.fr/en/artwork/image/download/{}/0 -O {}.zip ```
 
 That's it!! That single line of code is going to download the entire Louvre library for us. As of writing this, I kept the script running for ~30 mins & it has already ploughed through the first 50,000 URLs(nearly 50GB of data). I reckon another couple of hours and I'll have the entire Library in my hard-drive. 
 
